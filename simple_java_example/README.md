@@ -1,11 +1,11 @@
-*quick and dirty* example of running a java process inside docker that opens up a JRE debug port
+**quick and dirty** example of running a java process inside docker that exposes up a JRE debug port
 
 1) build the jar
 
-`cd docker-play/simple_java_example/simple-java
+`cd .../docker-play/simple_java_example/simple-java
 mvn install`
 
-2) build the docker image (from docker-play/simple_java_example dir)
+2) build the docker image (from .../docker-play/simple_java_example dir)
 
 `docker build -t <docker-user-name>/simple_java_example .`
 

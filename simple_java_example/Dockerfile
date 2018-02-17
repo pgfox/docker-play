@@ -2,7 +2,7 @@ FROM openjdk:alpine
 
 RUN mkdir -p /opt/simple-java
 
-COPY /simple-java/target/simple-java-1.0.jar /opt/simple-java/
+COPY ./simple-java/target/simple-java-1.0.jar /opt/simple-java/
 WORKDIR /opt/simple-java/
 
 EXPOSE 5005
