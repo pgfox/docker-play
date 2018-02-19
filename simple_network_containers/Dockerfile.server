@@ -1,0 +1,9 @@
+FROM openjdk:alpine
+
+RUN mkdir -p /opt/simple-server
+
+COPY ./simple-server/target/simple-server-1.0.jar /opt/simple-java/
+WORKDIR /opt/simple-java/
+
+#java -cp simple-server-1.0.jar com.acme.SimpleServer
+CMD ["java", "-cp", "simple-server-1.0.jar", "com.acme.SimpleServer"]
